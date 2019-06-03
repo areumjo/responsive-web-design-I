@@ -62,12 +62,11 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-/* Your code starts here! */
 
 .container {
-    max-width: 880px;
-    padding: 20px;
-    margin: 0 auto;
+	width: 880px;
+	margin: auto;
+	padding: 30px;
 }
 
 .header {
@@ -93,111 +92,88 @@ h1, h2, h3, h4, h5 {
     display: flex;
 }
 
-nav a:hover {
-    color: rgb(176, 177, 178);
-}
-
-nav a:first-child {
-    margin-left: 0;
-}
-
-
-.header-content img {
-    margin-top: 25px;
-}
-
-.middle-img {
-    margin-top: 25px;
-}
-
-/* header h1, coding-pic */
-.header-content {
-    margin: 50px auto 30px auto;
-    padding-bottom: 60px;
-    border-bottom: 2px solid black;
+.services-header-img {
+    width: 100%;
+    margin-top: 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-header div .div-h1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+h2 {
+    margin-top: 30px;
+    font-size: 30px;
 }
 
-.div-h1 {
-    margin-left: 100px;
-}
-
-header div h1 {
-    font-size: 70px;
-    text-align: center;	
+.section-services {
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
     margin-bottom: 30px;
 }
 
-header div h1 span {
-    display: block;
-}
-
-header div button {
-    font-size: 16px;
-    color: black;
-    border: 1px solid black;
+button {
+    border-color: black;
+	background-color: white;
+	text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
     padding: 5px 40px;
-    text-align: center;
+    margin-top: 10px;
+}
+
+.parent-container {
     display: flex;
-    margin-left: 60px;
-}
-
-/* top-content; features and about */
-.top-content {
-	display: flex;
-	margin: 10px 0 0 0;
-}
-
-.top-content p {
-    margin-right: 20px;
-}
-
-p {
-    line-height: 1.16;
-}
-
-.middle-img {
-    width: 100%;
-}
-
-.bottom-content {
-	display: flex;
-	margin: 30px 0 30px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
     border-bottom: 2px solid black;
 }
 
-.bottom-child {
-	display: flex;
-	flex-wrap: wrap;
-    margin: 0 20px 30px 0;
-}
-
-address {
-    margin: 38px 0 0 0;
-}
-
-address div {
-    line-height: 1.16;
-}
-
-address div span {
+.child-container {
+    width: 400px;
     display: flex;
-    margin: 10px 0 10px 0;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-color: rgba(233, 233, 232, 0.803);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height:  1.4;
+}
+
+ul {
+    list-style-type: square;
+    margin: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.bottom-left {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom-right {
+    display: flex;
+    align-items: center;
 }
 
 footer {
-    width: 100%;
-    margin: 50px 0 50px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 800px) {
@@ -213,6 +189,7 @@ footer {
     nav {
         width: 100%;
         justify-content: space-between;
+
     }
 
     .header nav a {
@@ -223,32 +200,20 @@ footer {
         order: -1;
     }
 
-    .coding-pic {
-        display: none;
+    .child-container {
+        width: 100%;
     }
-
-    .div-h1 {
-        padding: 30px 0;
-        margin: 0 auto;
+    .bottom-container {
         justify-content: center;
+        flex-direction: column;
+    }
+    .bottom-left {
+        width: 100%;
+        margin-bottom: 30px;
     }
 
-    button {
-        margin: 0 auto;
-    }
-
-    .top-content {
-        padding-left: 15px;
-    }
-
-    .bottom-content {
-        padding-left: 15px;
-    }
-
-    address {
-        padding-left:15px;
-    }
 }
+
 
 @media (max-width: 500px) {
     nav {
@@ -276,31 +241,4 @@ footer {
         margin-top: 0;
     }
 
-    .header-content {
-        margin: 0 auto;
-        padding-bottom: 40px;
-    }
-
-    .top-content {
-        flex-wrap: wrap;
-        margin-top: 30px;
-        padding-left: 0;
-    }
-
-    .top-content p {
-        margin-bottom: 20px;
-    }
-
-    .bottom-content {
-        flex-wrap: wrap;
-        padding-left: 0;
-    }
-
-    h2 {
-        margin-top: 20px;
-    }
-
-    address {
-        padding-left: 0;
-    }
 }
