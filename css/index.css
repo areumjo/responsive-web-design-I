@@ -236,5 +236,39 @@ footer {
 }
 
 @media (max-width: 500px) {
+    nav {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
+    nav a {
+        padding: 25px;
+        border-bottom: 1px solid gray;
+        font-size: 20px;
+    }
+
+    nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .top-content {
+        flex-wrap: wrap;
+    }
+
+    .top-content p {
+        margin-bottom: 20px;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
 }
