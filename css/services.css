@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-	width: 940px;
+	width: 880px;
 	margin: auto;
 	padding: 30px;
 }
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5 {
 
 .header nav a {
 	/* TB LR */
-	margin: 0px 60px 0px 0px;
+	margin: 0px 55px 0px 0px;
 	color: gray;
 	text-decoration: none;
 	position: relative;
@@ -89,11 +89,11 @@ h1, h2, h3, h4, h5 {
 
 .header .logo {
     margin-top: 30px;
-    margin-left: 30px;
     display: flex;
 }
 
 .services-header-img {
+    width: 100%;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -129,8 +129,7 @@ button {
 }
 
 .child-container {
-    width: 420px;
-    height: 250px;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid black;
@@ -177,41 +176,69 @@ footer {
     margin-bottom: 30px;
 }
 
-
-@media all and (max-width: 500px) {
-    .section-service-p {
-        width: 50%;
-    }
-    .services-header-img {
-        width: 50%;
-    }
-    .parent-container {
-        flex-direction: column;
-    }
-    .bottom-container {
-        flex-direction: column;
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
     }
 
     .header {
-        width: 50%;
-        flex-flow: column wrap;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .navigation {
-        flex-flow: column wrap;
-        width: 50%;
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+
     }
-    .navigation a { 
-        text-align: center; 
-        padding: 10px;
-        border-top: 1px solid rgba(255,255,255,0.3); 
-        border-bottom: 1px solid rgba(0,0,0,0.1); 
+
+    .header nav a {
+        margin: 0;
     }
+
     .logo {
-        margin: 0 auto;
         order: -1;
     }
-    footer {
-        width: 50%;
+
+    .child-container {
+        width: 100%;
     }
+    .bottom-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bottom-left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .header nav {
+        margin-top: 30px;
+    }
+
+    nav a {
+        padding: 20px;
+        border-bottom: 1px solid gray;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    .header .logo {
+        margin-top: 0;
+    }
+
 }
